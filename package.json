@@ -1,0 +1,32 @@
+{
+  "name": "logger",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "unpkg": "./dist/index.umd.cjs",
+  "jsdelivr": "./dist/index.umd.cjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && changeset publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.34.5",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^5.4.21"
+  }
+}
